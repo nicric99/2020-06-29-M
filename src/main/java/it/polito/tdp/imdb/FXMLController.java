@@ -103,6 +103,7 @@ public class FXMLController {
     	model.getCammino(d, c);
     	
     	List<Director> result= new ArrayList<>(model.getPercorso());
+    	txtResult.appendText("Ecco il cammino");
     	for(Director a:result) {
     		txtResult.appendText(a.toString()+"\n");
     	}
